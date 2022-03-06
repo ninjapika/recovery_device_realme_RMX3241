@@ -68,6 +68,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export FOX_BUILD_TYPE="Stable"
 	export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1 # This ain't a xiaomi device
 	export OF_FLASHLIGHT_ENABLE=0
+        export TARGET_DEVICE_ALT="RE513CL1, RMX3242"
+        export OF_TARGET_DEVICES="RMX3241,RE513CL1,RMX3242"
 
 	export ALLOW_MISSING_DEPENDENCIES=true
 
