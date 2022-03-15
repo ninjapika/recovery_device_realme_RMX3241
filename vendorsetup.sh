@@ -34,7 +34,6 @@ if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
 fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
-   	export TW_DEFAULT_LANGUAGE="en"
 	export OF_KEEP_FORCED_ENCRYPTION=1
 	export OF_PATCH_AVB20=1
         export OF_SCREEN_H=2400
@@ -63,9 +62,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         # use system (ROM) fingerprint where available
         export OF_USE_SYSTEM_FINGERPRINT=1
 
-	export OF_MAINTAINER="Ninja Garuda"
-        export OF_MAINTAINER_AVATAR="/home/agidevkrishn/fox_11.0/avatar.jpg"
-        export FOX_BUILD_TYPE="Stable"
 	export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1 # This ain't a xiaomi device
 	export OF_FLASHLIGHT_ENABLE=0
         export TARGET_DEVICE_ALT="RE513CL1, RMX3242"
